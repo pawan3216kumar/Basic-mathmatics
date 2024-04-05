@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="first" type="text" placeholder="enter 1st Number">
+    <input id="second" type="text" placeholder="enter 2nd Number">
+    <br><br>
+
+    <button onclick="add()">Add</button>
+    <button onclick="subt()">Subtract</button>
+    <button onclick="multi()">Multi</button>
+    <button onclick="divide()">Divide</button>
+    
+</body>
+</html>
+ <script>
+
+    let firstInput = document.getElementById("first");
+    let secondInput = document.getElementById("second");
+
+    function add(){
+        let sum = Number(firstInput.value) + Number(secondInput.value)
+        alert(`Sum value is ${sum} `)
+    }
+
+    function subt(){
+        let Subtract = Number(firstInput.value) - Number(secondInput.value)
+        alert(`Subtract value  is ${Subtract}`)
+    }
+
+    function multi(){
+        let multiply = Number(firstInput.value) * Number(secondInput.value)
+         alert(`Multiply value is ${multiply}`)
+    }
+
+    function divide(){
+        let divide = Number(firstInput.value) / Number(secondInput.value)
+         alert(`divide value is ${divide}`)
+    }
+
+
+
+
+
+
+ </script>
